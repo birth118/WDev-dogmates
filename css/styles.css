@@ -1,0 +1,224 @@
+body {
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.white-section {
+    background-color: #fff;     /* If no color, then tranparent */
+}
+/* 
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+ */
+
+/*******************************************************  Title section */
+
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+    text-align: left;
+}
+
+/* navigation bar */
+
+.navbar {
+    padding: 0 0 3.5rem;
+    /* top horizontal bottom */
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+
+.big-heading {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    /* margin-bottom: 30px; */
+}
+
+/* Download Buttons */
+
+.download-btn {
+    margin: 5% 3% 5% 0;
+}
+
+/* Title image */
+
+.title-img {
+    width: 60%;
+    /* 60% width to parent which is div_col-lg-6 */
+    transform: rotate(25deg);
+    /* Equal to rotateZ(45deg) */
+    position: absolute;
+    /* To send the image behind the .features{} section: See Stacking order pdf */
+    right: 30%;
+}
+
+
+/********************************************************* Features section */
+
+#features {
+    /* padding: while keeping the box, the content area will be reduced as being padded. */
+
+    position: relative;
+    /* 2) to make 1) work. it needs to have position element */
+    z-index: 1;
+    /* 1) to accomodate the doggy image (title-img ) hehind */
+}
+
+.feaure-div {
+
+    /* margin: 50px auto; */
+    /* Instead, 'padding: 7% 15%;' is given to the parent, '#feature' */
+    /* padding: 5% */
+    /* actual size for content will be reduced as being 5% padded. It makes effect of the contents inside to be less spread */
+    /* display: inline-block; */
+    /* No longer need as 5% padded */
+}
+
+.feature-icon {
+    /*     font-size: 2.5rem;  */
+    /* Instead, fa-4x is used in the class */
+    color: #ef8172;
+    margin: 0 auto 15px;
+}
+
+.feature-icon:hover {
+    color: #ff4c68;
+}
+
+/* .feature-title {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+ */
+
+.feature-desc {
+    font-family: 'Montserrat';
+    color: #8f8f8f;
+    /*     margin: 0 auto 0;  */
+    /* No longer need as 5% padded in the parent*/
+    /*    width: 70%; */
+    /* No longer need as 5% padded in the parent */
+}
+
+/*********************************************** Testmonial section */
+
+#testimonials {
+    background-color: #ef8172;
+}
+
+.testmonial-img {
+    border-radius: 100%;
+    width: 10%;
+    margin: 20px;
+}
+
+.carousel-item {
+    /* padding: 7% 15%; */     /*  this will push the the arrow (< , >) button to away to farther */
+}
+
+/**************************************************  press section */
+
+#press  {
+    padding-bottom: 3%;
+}
+
+#press  {
+    background-color: #ef8172;
+}
+
+.press-img {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/************************************************  pricing section */
+
+#pricing {
+    padding: 100px;
+
+}
+
+.pricing-col {
+    padding: 3% 2%;
+}
+
+/********************************************** Call to action section*/
+
+.cta-heading {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 3.5rem;
+    width: 70%;
+    padding-top: 100px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/************************************************  Footer secton */
+
+.sns-img {
+    margin: 20px 10px;
+}
+
+.sns-img:hover {
+    color: #ff4c68;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1028px) {
+    /* When the browser resolution width less than 1028px */
+    /*     media query break point */
+    #title .container-fluid {
+        text-align: center;
+    }
+    .title-img {
+        position: static;
+        transform: rotate(0deg);
+    }
+}
